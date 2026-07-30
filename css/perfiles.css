@@ -1,0 +1,243 @@
+/* ============================
+        GENERALES
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f5f7;
+    color:#444;
+}
+
+/* ============================
+        STAFF
+============================ */
+
+.staff{
+    padding:90px 0;
+    background:#f4f5f7;
+}
+
+.subtitulo{
+    color:#8b8b8b;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.titulo{
+    color:#2ea3c9;
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+/* ============================
+        TARJETAS
+============================ */
+
+.perfil{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.35s;
+    background:#fff;
+}
+
+.perfil:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18)!important;
+}
+
+.perfil img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    margin:30px auto 15px;
+}
+
+.perfil .card-body{
+    padding:20px 25px 30px;
+    text-align:center;
+}
+
+.perfil h4{
+    font-size:28px;
+    color:#2d2d2d;
+    font-weight:700;
+}
+
+.cargo{
+    display:block;
+    color:#999;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.perfil p{
+    font-size:15px;
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+}
+
+.redes a{
+    color:#30c26a;
+    font-size:22px;
+    transition:.3s;
+}
+
+.redes a:hover{
+    color:#219653;
+}
+
+/* ============================
+      TESTIMONIOS
+============================ */
+
+.testimonios{
+
+    padding:90px 0;
+
+    background:
+    linear-gradient(rgba(194,214,20,.90),
+    rgba(194,214,20,.90)),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1500&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.subtitulo2{
+
+    color:rgba(0,0,0,.45);
+    font-size:15px;
+    letter-spacing:2px;
+    margin-bottom:15px;
+
+}
+
+.testimonios h2{
+
+    font-size:50px;
+    font-weight:700;
+    margin-bottom:60px;
+
+}
+
+/* ============================
+      COMENTARIOS
+============================ */
+
+.comentario{
+
+    border:none;
+    border-radius:8px;
+    transition:.3s;
+    height:100%;
+
+}
+
+.comentario:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.comentario .card-body{
+
+    padding:40px;
+
+}
+
+.texto{
+
+    font-size:18px;
+    line-height:2;
+    color:#4d4d4d;
+    margin-bottom:35px;
+    text-align:center;
+
+}
+
+.comentario h5{
+
+    margin-bottom:5px;
+    font-weight:700;
+
+}
+
+.comentario span{
+
+    color:#777;
+
+}
+
+/* ============================
+      BOTON
+============================ */
+
+.btn-outline-light{
+
+    border:2px solid white;
+    padding:12px 45px;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.btn-outline-light:hover{
+
+    background:white;
+    color:#a8bf00;
+
+}
+
+/* ============================
+      RESPONSIVE
+============================ */
+
+@media(max-width:992px){
+
+    .titulo{
+        font-size:40px;
+    }
+
+    .testimonios h2{
+        font-size:36px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .titulo{
+        font-size:34px;
+    }
+
+    .testimonios h2{
+        font-size:30px;
+    }
+
+    .perfil img{
+        width:150px;
+        height:150px;
+    }
+
+    .texto{
+        font-size:16px;
+    }
+
+}
